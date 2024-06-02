@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #000000;
+  position: fixed;
+  width: 100%;
+  height: 8vh;
+  z-index: 1;
+}
+
+header .systemName {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+header ul {
+  width: 20.5%;
+  list-style: none;
+  display: flex;
+  gap: 2%;
+}
+
+header ul li {
+  background-color: #000000;
+  font-size: 95%;
+  cursor: pointer;
+  font-weight: 400;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: all ease-in-out 0.25s;
+}
+
+header ul li:hover {
+  background-color: #1d1d1d;
+}
+
+header ul li a {
+  color: #ffffff;
+}
+
+section > div {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  font-size: 18px;
+  padding: 1vw;
+}
+
+section > :first-child > div {
+  margin-top: 8vh;
+  height: 92vh;
+}
+
+#homePage > div {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  padding: 0;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border-radius: 20px;
+  border: none;
+  color: #313131;
+  font-size: 2em;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: all ease-in-out 0.25s;
+}
+
+.carousel-control:hover {
+  background-color: #ffffff56;
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 34px;
+}
+
+form div input,
+select {
+  padding: 10px;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+}
+
+.buttons {
+  flex-direction: row;
+  font-size: 18px !important;
+  /* gap: 0; */
+}
+
+.buttons button {
+  padding: 19px 28px;
+  background-color: #c4c4c4;
+  border: 1px solid transparent;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all ease-in-out 0.25s;
+}
+
+.buttons > :first-child:hover {
+  background-color: #56abf6;
+  border-radius: 12px;
+}
+
+.buttons > :nth-child(2):hover {
+  background-color: #db3843;
+  border-radius: 12px;
+}
+
+.buttons > :nth-child(3):hover {
+  background-color: #dcaa13;
+  border-radius: 12px;
+}
+
+.buttons > :nth-child(4):hover {
+  background-color: #24a746;
+  border-radius: 12px;
+}
+
+.buttons > :last-child:hover {
+  background-color: #d43a40;
+  border-radius: 12px;
+}
+
+#CustomerManage table,
+#ItemManage table {
+  margin-left: 50px;
+  border-collapse: collapse;
+}
+
+#CustomerManage th,
+#CustomerManage td,
+#ItemManage th,
+#ItemManage td {
+  border: 1px solid #c4c4c4;
+  width: 20vw;
+  height: 4vw;
+  text-align: center;
+}
+
+#CustomerManage th,
+#ItemManage th {
+  background-color: #000000;
+  color: #eaeaea;
+}
+
+section {
+  display: none;
+  background: #f2f2f2;
+}
+
+.includeDetails,
+.ItemSelect,
+.TotalCal {
+  width: 39.3%;
+  height: 29em !important;
+  padding: 20px;
+  border: 1px solid #313131;
+  border-radius: 15px;
+}
+
+#OrderManage > div {
+  display: flex;
+  justify-content: space-around;
+}
+
+#OrderManage > :first-child > div {
+  margin-top: 12vh;
+}
+
+#OrderManage h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #f6f6f6;
+  background-color: #000000;
+  border-radius: 12px;
+  padding: 10px 20px;
+}
+
+#OrderManage .includeDetails form div > div,
+#OrderManage .includeDetails form > :last-child {
+  margin-top: 0;
+  margin: 10px 15px;
+}
+
+#OrderManage .includeDetails form > :first-child {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+#OrderManage .ItemSelect form > :first-child {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+#OrderManage .ItemSelect form div > div,
+#OrderManage .ItemSelect form > :last-child {
+  margin-top: 0;
+  margin: 10px 15px;
+}
+
+#OrderManage .ItemSelect form > :nth-child(2) {
+  display: grid;
+  grid-template-columns: 40% 39% 20%;
+  margin: 0;
+}
+
+.ItemSelect > :last-child {
+  display: flex;
+  justify-content: end;
+}
+
+.ItemSelect button {
+  padding: 10px 20px;
+  cursor: pointer;
+  color: white;
+  margin-top: 30px;
+  margin-right: 20px;
+  background-color: #313131;
+  border: 1px solid transparent;
+  border-radius: 100px;
+  transition: all ease-in-out 0.25s;
+}
+
+.ItemSelect button:hover {
+  background-color: #1565ac;
+  border-radius: 12px;
+}
+
+#OrderManage .TotalCal h1,
+.TotalCal h2 {
+  background-color: transparent;
+  padding: 0;
+  font-size: 30px;
+  color: #147788;
+  font-weight: 400;
+}
+
+.TotalCal {
+  width: 20%;
+  border-radius: 15px;
+}
+
+.TotalCal h2 {
+  color: #d43a40;
+}
+
+.TotalCal form > :first-child {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.TotalCal > :last-child {
+  display: flex;
+  justify-content: center;
+}
+
+.TotalCal button {
+  padding: 20px 30px;
+  border: 1px solid #c4c4c4;
+  cursor: pointer;
+  background-color: #13792e;
+  color: white;
+  margin-top: 50px;
+  border: 1px solid transparent;
+  border-radius: 25px;
+  transition: all ease-in-out 0.25s;
+}
+
+.TotalCal button:hover {
+  background-color: #0d6725;
+  border-radius: 12px;
+}
+
+.tableRow {
+  height: auto;
+}
+
+.table > div,
+.tableRows > div {
+  display: flex;
+}
+
+.table,
+.tableRows {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5.7vw;
+}
+
+.table > div > div,
+.tableRows > div > div {
+  width: 18vw;
+  height: 4vw;
+  border: 1px solid #c4c4c4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tableRows > div > div {
+  width: 20vw;
+}
+
+#OrderManage > :last-child {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  max-height: 34vh;
+}
+
+h5 {
+  font-size: 15px;
+  color: #ff4343;
+  font-weight: 400;
+  position: absolute;
+  margin-top: 7.8vh;
+}
