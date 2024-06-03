@@ -70,7 +70,7 @@
             <div>
               <label for="">Customer Name</label>
               <input type="text" class="custName" />
-              <h5 class="invalidCustName">aa</h5>
+              <h5 class="invalidCustName"></h5>
             </div>
             <div>
               <label for="">Customer Address</label>
@@ -88,7 +88,7 @@
               <button class="removeBtn">Remove</button>
               <button class="updateBtn">Update</button>
               <button class="searchBtn">GetAll</button>
-              <button class="cleatBtn">Clear All</button>
+              <button class="clearBtn">Clear All</button>
             </div>
           </form>
         </div>
@@ -156,20 +156,7 @@
                 <th>Item Price</th>
               </tr>
             </thead>
-            <tbody class="tableRow">
-              <tr>
-                <td>IT-001</td>
-                <td>Soap</td>
-                <td>100</td>
-                <td>50.00</td>
-              </tr>
-              <tr>
-                <td>IT-002</td>
-                <td>Shampoo</td>
-                <td>200</td>
-                <td>100.00</td>
-              </tr>
-            </tbody>
+            <tbody class="tableRow"></tbody>
           </table>
         </div>
       </div>
@@ -299,4 +286,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="controller/IndexController.js"></script>
+  <script type="module" src="controller/CustomerController.js"></script>
+  <script type="module" src="controller/ItemController.js"></script>
+  <script type="module" src="controller/OrderController.js"></script>
 </html>
